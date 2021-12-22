@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Pushster&family=Shizuru&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+.fuente-1{
+    font-family: 'Shizuru', cursive;
+
+}
+.fuente-2{
+    font-family: 'Pushster', cursive;
+
+}
+.fondo_caja{
+    background: url('../images/bg-colors-r.png');
+    max-height: 100vh;
+    min-height: 100vh;
+    background-position: left;
+    background-attachment: fixed;
+    .navbar{
+        .navbar-brand{
+            margin-left: 30px;
+        }
+        .navbar-nav{
+            margin-right: 100px;
+        }
+    }
+}
+.contenedor-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.titulo{
+    color: #ffff;
+    letter-spacing: 15px;
+    font-family: 'Pushster', cursive;
+    font-size: 80px;
+    padding: 15px 20px 20px;
+    border: #fff solid 10px;   
+}
+main{
+    section{
+        background: url('../images/font-text.png');
+        background-repeat: no-repeat;
+        .container{
+            display: flex;
+            margin: 100px auto;
+            justify-content: space-between;
+            width: 70%;
+            .caja{
+                width: 50%;
+                padding: 0;
+                margin: 0;
+            }
+            .ctexto{
+                .titulo-texto{
+                    text-align: center;
+                    color: #000;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 40px;
+                }
+                text-align: justify;
+                font-weight: 400;
+            }
+            .cimagen{
+                display: flex;
+                margin: 0 auto;
+                justify-content: end;
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
