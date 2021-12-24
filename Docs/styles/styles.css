@@ -6,6 +6,23 @@
   padding: 0;
 }
 
+body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #d20962;
+}
+
 .fuente-1 {
   font-family: 'Shizuru', cursive;
 }
@@ -49,12 +66,13 @@
   border: #fff solid 10px;
 }
 
-main section {
+main .conocenos {
   background: url("../images/font-text.png");
   background-repeat: no-repeat;
+  background-position: end;
 }
 
-main section .container {
+main .conocenos .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,18 +83,18 @@ main section .container {
   width: 70%;
 }
 
-main section .container .caja {
+main .conocenos .container .caja {
   width: 50%;
   padding: 0;
   margin: 0;
 }
 
-main section .container .ctexto {
+main .conocenos .container .ctexto {
   text-align: justify;
   font-weight: 400;
 }
 
-main section .container .ctexto .titulo-texto {
+main .conocenos .container .ctexto .titulo-texto {
   text-align: center;
   color: #000;
   font-family: 'Open Sans', sans-serif;
@@ -84,7 +102,7 @@ main section .container .ctexto .titulo-texto {
   font-size: 40px;
 }
 
-main section .container .cimagen {
+main .conocenos .container .cimagen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +112,55 @@ main section .container .cimagen {
           justify-content: end;
 }
 
-main section .container .cimagen img {
+main .conocenos .container .cimagen img {
   width: 300px;
+}
+
+main .conocenos .container .brain {
+  font-size: 25px;
+}
+
+main .fotos .container {
+  text-align: center;
+}
+
+main .fotos .container h2 {
+  padding-top: 30px;
+  font-size: 50px;
+}
+
+main .fotos .galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .fotos .galeria .caja {
+  margin: 10px;
+}
+
+main .fotos .galeria .caja img {
+  vertical-align: top;
+  width: 300px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+main .talleres {
+  margin-top: 40px;
+  background: #1877f2;
+}
+
+main .talleres .container h2 {
+  color: #fff;
+  font-size: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

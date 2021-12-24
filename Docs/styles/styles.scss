@@ -4,6 +4,20 @@
     margin: 0;
     padding: 0;   
 }
+body{
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    &::-webkit-scrollbar{
+        width: 7px;
+    }   
+    &::-webkit-scrollbar-track{
+        background-color: #000;
+    }  
+    &::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+        background-color: #d20962;
+    }
+        
+}
 .fuente-1{
     font-family: 'Shizuru', cursive;
 
@@ -41,9 +55,10 @@
     border: #fff solid 10px;   
 }
 main{
-    section{
+    .conocenos{
         background: url('../images/font-text.png');
         background-repeat: no-repeat;
+        background-position: end;
         .container{
             display: flex;
             margin: 100px auto;
@@ -72,6 +87,44 @@ main{
                 img{
                     width: 300px;
                 }
+            }
+            .brain{
+                font-size: 25px;
+            }
+        }
+    }
+    .fotos{
+        .container{
+            text-align: center;
+            h2{
+                padding-top: 30px;
+                font-size: 50px;
+            }
+        }
+        .galeria{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .caja{
+                margin: 10px;
+                img{
+                    vertical-align: top;
+                    width: 300px;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+                
+            }
+        }
+    }
+    .talleres{
+        margin-top: 40px;
+        background: #1877f2;
+        .container{
+            h2{
+                color:#fff;
+                font-size: 50px;
             }
         }
     }
