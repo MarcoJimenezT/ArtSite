@@ -7,7 +7,8 @@
 }
 
 body {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-color: #1E1E24;
+  color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -96,7 +97,6 @@ main .conocenos .container .ctexto {
 
 main .conocenos .container .ctexto .titulo-texto {
   text-align: center;
-  color: #000;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -118,6 +118,13 @@ main .conocenos .container .cimagen img {
 
 main .conocenos .container .brain {
   font-size: 25px;
+}
+
+main .fotos {
+  padding-bottom: 70px;
+  background: url("../images/asto.png");
+  background-position: -150px;
+  background-repeat: no-repeat;
 }
 
 main .fotos .container {
@@ -154,13 +161,51 @@ main .fotos .galeria .caja img {
      object-position: center center;
 }
 
-main .talleres {
-  margin-top: 40px;
-  background: #1877f2;
+main .seccion-o {
+  background: url("../images/color.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
 }
 
-main .talleres .container h2 {
+main .seccion {
+  padding-bottom: 60px;
+  background: #FF1053;
+}
+
+main .seccion .container h2 {
   color: #fff;
   font-size: 50px;
+}
+
+main .other-seccion {
+  background: #F9C80E;
+}
+
+main .donativos .container h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 50px;
+}
+
+main .donativo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .donativo .tarjeta {
+  margin-right: 40px;
+}
+
+main .donativo .tarjeta img {
+  width: 300px;
 }
 /*# sourceMappingURL=styles.css.map */

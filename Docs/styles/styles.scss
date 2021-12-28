@@ -5,7 +5,9 @@
     padding: 0;   
 }
 body{
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    // background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-color: #1E1E24;
+    color: #fff;
     &::-webkit-scrollbar{
         width: 7px;
     }   
@@ -72,7 +74,6 @@ main{
             .ctexto{
                 .titulo-texto{
                     text-align: center;
-                    color: #000;
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 700;
                     font-size: 40px;
@@ -94,6 +95,10 @@ main{
         }
     }
     .fotos{
+        padding-bottom: 70px;
+        background: url("../images/asto.png");
+        background-position: -150px;
+        background-repeat: no-repeat;
         .container{
             text-align: center;
             h2{
@@ -118,14 +123,45 @@ main{
             }
         }
     }
-    .talleres{
-        margin-top: 40px;
-        background: #1877f2;
+    .seccion-o{
+        background: url("../images/color.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        padding-bottom: 70px;
+    }
+    .seccion{
+        padding-bottom: 60px;
+        background: #FF1053;
         .container{
             h2{
                 color:#fff;
                 font-size: 50px;
             }
         }
+    }
+    .other-seccion{
+        background: #F9C80E;
+    }
+    .donativos{
+        .container{
+            h2{
+                margin-top: 40px;
+                text-align: center;
+                font-size: 50px;
+            }
+        }
+    }
+    .donativo{
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        .tarjeta{
+            margin-right: 40px;
+            img{
+                width: 300px;
+            }
+        }
+
     }
 }
